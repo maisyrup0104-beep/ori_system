@@ -85,13 +85,13 @@ export default function SettingsPage() {
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="bg-white rounded-lg border border-gray-200 p-8 space-y-6">
+        <form onSubmit={handleSubmit} className="bg-gradient-to-br from-green-50 to-pink-50 rounded-lg border border-green-200 p-8 space-y-6">
           <div>
-            <label htmlFor="revenue_goal" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="revenue_goal" className="block text-sm font-semibold text-gray-900 mb-2">
               Revenue Goal
             </label>
             <div className="relative">
-              <span className="absolute left-3 top-3 text-gray-500">₱</span>
+              <span className="absolute left-3 top-3 text-gray-600 font-semibold">₱</span>
               <input
                 type="number"
                 id="revenue_goal"
@@ -99,17 +99,17 @@ export default function SettingsPage() {
                 value={formData.revenue_goal}
                 onChange={handleChange}
                 placeholder="0"
-                className="w-full pl-8 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+                className="w-full pl-8 pr-4 py-2 border border-green-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none bg-white text-gray-900"
               />
             </div>
           </div>
 
           <div>
-            <label htmlFor="current_revenue" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="current_revenue" className="block text-sm font-semibold text-gray-900 mb-2">
               Current Revenue
             </label>
             <div className="relative">
-              <span className="absolute left-3 top-3 text-gray-500">₱</span>
+              <span className="absolute left-3 top-3 text-gray-600 font-semibold">₱</span>
               <input
                 type="number"
                 id="current_revenue"
@@ -117,13 +117,13 @@ export default function SettingsPage() {
                 value={formData.current_revenue}
                 onChange={handleChange}
                 placeholder="0"
-                className="w-full pl-8 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+                className="w-full pl-8 pr-4 py-2 border border-green-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none bg-white text-gray-900"
               />
             </div>
           </div>
 
           <div>
-            <label htmlFor="days_remaining" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="days_remaining" className="block text-sm font-semibold text-gray-900 mb-2">
               Days Remaining
             </label>
             <input
@@ -133,12 +133,12 @@ export default function SettingsPage() {
               value={formData.days_remaining}
               onChange={handleChange}
               placeholder="18"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+              className="w-full px-4 py-2 border border-green-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none bg-white text-gray-900"
             />
           </div>
 
           <div>
-            <label htmlFor="current_focus" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="current_focus" className="block text-sm font-semibold text-gray-900 mb-2">
               Current Focus
             </label>
             <input
@@ -148,7 +148,7 @@ export default function SettingsPage() {
               value={formData.current_focus}
               onChange={handleChange}
               placeholder="What are you focused on right now?"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+              className="w-full px-4 py-2 border border-green-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent outline-none bg-white text-gray-900"
             />
           </div>
 
@@ -156,7 +156,7 @@ export default function SettingsPage() {
             <button
               type="submit"
               disabled={saving}
-              className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-400 transition-colors font-medium"
+              className="px-6 py-2 bg-gradient-to-r from-pink-400 to-green-400 text-white rounded-lg hover:from-pink-500 hover:to-green-500 disabled:from-gray-400 disabled:to-gray-400 transition-all font-semibold shadow-md"
             >
               {saving ? 'Saving...' : 'Save Settings'}
             </button>

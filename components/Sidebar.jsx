@@ -30,9 +30,9 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-64 bg-gray-900 text-white h-screen fixed left-0 top-0 overflow-y-auto">
+    <aside className="w-64 bg-gradient-to-b from-pink-100 to-green-100 text-gray-800 h-screen fixed left-0 top-0 overflow-y-auto border-r border-pink-200">
       <div className="p-6">
-        <h1 className="text-xl font-bold">ORI Sprint OS</h1>
+        <h1 className="text-xl font-bold text-gray-900">ORI Sprint OS</h1>
       </div>
 
       <nav className="px-4 space-y-1">
@@ -48,8 +48,8 @@ export default function Sidebar() {
               href={item.href}
               className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors ${
                 isActive
-                  ? 'bg-gray-800 text-white'
-                  : 'text-gray-400 hover:text-white hover:bg-gray-800'
+                  ? 'bg-pink-300 text-gray-900 font-semibold'
+                  : 'text-gray-700 hover:text-gray-900 hover:bg-green-200'
               }`}
             >
               <Icon size={20} />
