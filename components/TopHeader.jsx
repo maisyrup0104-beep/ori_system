@@ -29,7 +29,7 @@ export default function TopHeader() {
           <div className="flex flex-col">
             <span className="text-xs text-gray-600">Revenue Goal</span>
             <span className="text-lg font-bold text-gray-900">
-              {loading ? '—' : settings?.revenue_goal ? `$${settings.revenue_goal.toLocaleString()}` : '—'}
+              {loading ? '—' : settings?.revenue_goal ? `₱${settings.revenue_goal.toLocaleString()}` : '—'}
             </span>
           </div>
 
@@ -39,7 +39,7 @@ export default function TopHeader() {
               {loading
                 ? '—'
                 : settings?.revenue_goal && settings?.current_revenue
-                ? `$${(settings.revenue_goal - settings.current_revenue).toLocaleString()}`
+                ? `₱${(settings.revenue_goal - settings.current_revenue).toLocaleString()}`
                 : '—'}
             </span>
           </div>

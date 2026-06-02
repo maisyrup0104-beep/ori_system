@@ -91,7 +91,7 @@ export default function SettingsPage() {
               Revenue Goal
             </label>
             <div className="relative">
-              <span className="absolute left-3 top-3 text-gray-500">$</span>
+              <span className="absolute left-3 top-3 text-gray-500">₱</span>
               <input
                 type="number"
                 id="revenue_goal"
@@ -109,7 +109,7 @@ export default function SettingsPage() {
               Current Revenue
             </label>
             <div className="relative">
-              <span className="absolute left-3 top-3 text-gray-500">$</span>
+              <span className="absolute left-3 top-3 text-gray-500">₱</span>
               <input
                 type="number"
                 id="current_revenue"

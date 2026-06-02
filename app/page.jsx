@@ -42,17 +42,17 @@ export default function DashboardPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
               <MetricCard
                 label="Revenue Goal"
-                value={settings?.revenue_goal ? `$${settings.revenue_goal.toLocaleString()}` : '—'}
+                value={settings?.revenue_goal ? `₱${settings.revenue_goal.toLocaleString()}` : '—'}
                 icon={DollarSign}
               />
               <MetricCard
                 label="Current Revenue"
-                value={settings?.current_revenue ? `$${settings.current_revenue.toLocaleString()}` : '—'}
+                value={settings?.current_revenue ? `₱${settings.current_revenue.toLocaleString()}` : '—'}
                 icon={TrendingUp}
               />
               <MetricCard
                 label="Revenue Remaining"
-                value={`$${revenueRemaining.toLocaleString()}`}
+                value={`₱${revenueRemaining.toLocaleString()}`}
                 icon={DollarSign}
               />
               <MetricCard
